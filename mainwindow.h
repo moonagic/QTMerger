@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QThread>
 
 namespace Ui {
 class MainWindow;
@@ -23,9 +24,16 @@ private slots:
     void on_pushButton_3_clicked();
 
     void on_pushButton_4_clicked();
+public slots:
+    void workFinished();
+    void workProgress(qint64 bytesRead, qint64 totalBytes);
 
 private:
     Ui::MainWindow *ui;
+    QThread workerThread;
+
+signals:
+    void operate(QString sourcePath, QString newPath, QString targetPath);
 };
 
 #endif // MAINWINDOW_H
