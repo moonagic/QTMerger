@@ -58,12 +58,12 @@
      <rect>
       <x>40</x>
       <y>20</y>
-      <width>54</width>
-      <height>12</height>
+      <width>251</width>
+      <height>16</height>
      </rect>
     </property>
     <property name="text">
-     <string>源目录</string>
+     <string>Source Path</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
@@ -71,12 +71,12 @@
      <rect>
       <x>40</x>
       <y>80</y>
-      <width>54</width>
-      <height>12</height>
+      <width>181</width>
+      <height>16</height>
      </rect>
     </property>
     <property name="text">
-     <string>对比目录</string>
+     <string>New path</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
@@ -89,7 +89,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>增量目录</string>
+     <string>Output Path</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton">
@@ -102,7 +102,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>浏览...</string>
+     <string>Browse...</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2">
@@ -115,7 +115,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>浏览...</string>
+     <string>Browse...</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_3">
@@ -128,7 +128,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>浏览...</string>
+     <string>Browse...</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_4">
@@ -141,7 +141,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>生成</string>
+     <string>Start</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_4">
@@ -154,7 +154,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>进度</string>
+     <string>Progress</string>
     </property>
    </widget>
    <widget class="QProgressBar" name="progressBar">
@@ -173,14 +173,14 @@
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>380</x>
+      <x>370</x>
       <y>200</y>
-      <width>54</width>
-      <height>12</height>
+      <width>81</width>
+      <height>16</height>
      </rect>
     </property>
     <property name="text">
-     <string>完成!</string>
+     <string>Finished!</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>

@@ -41,12 +41,10 @@ QList<QString> getFullDirectory(QString target)
         }
         if (fileInfo->at(i).isDir())
         {
-            // 属于目录
             result.append(getFullDirectory(fileInfo->at(i).absoluteFilePath()));
         }
         else if (fileInfo->at(i).isFile())
         {
-            // 属于文件
             result.append(fileInfo->at(i).absoluteFilePath());
         }
     }

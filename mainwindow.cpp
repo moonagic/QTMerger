@@ -11,7 +11,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
 
     setFixedSize(800, 300);
-    setWindowTitle("增量对比生成工具");
+    setWindowTitle("Contrast Tool");
 
 
     Worker *w = new Worker;
@@ -58,7 +58,6 @@ void MainWindow::on_pushButton_4_clicked()
 
     operate(sourcePath, newPath, targetPath);
 
-    // 静默
     ui->pushButton->setEnabled(false);
     ui->pushButton_2->setEnabled(false);
     ui->pushButton_3->setEnabled(false);
@@ -77,7 +76,6 @@ void MainWindow::workFinished()
 {
     ui->label_5->show();
 
-    // 恢复操作
     ui->pushButton->setEnabled(true);
     ui->pushButton_2->setEnabled(true);
     ui->pushButton_3->setEnabled(true);

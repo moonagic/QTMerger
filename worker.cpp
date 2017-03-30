@@ -1,11 +1,6 @@
 #include "worker.h"
 #include "utils.h"
 
-Worker::Worker(QObject *parent) : QObject(parent)
-{
-
-}
-
 void Worker::doWork(QString sourcePath, QString newPath, QString targetPath)
 {
     QList<QString> r = getFullDirectory(newPath);

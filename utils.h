@@ -13,8 +13,8 @@
 
 
 /**
- * @brief 检查目录,如果目录不存在就尝试创建
- * @param  targetDirectory
+ * @brief verifyOrCreateTargetDirectory
+ * @param targetDirectory
  * @return
  */
 bool verifyOrCreateTargetDirectory(QString targetDirectory);
