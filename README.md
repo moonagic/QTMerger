@@ -1,1 +1,1 @@
-# 19_merger_QT
+# QTMerger
