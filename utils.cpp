@@ -16,23 +16,23 @@ bool verifyOrCreateTargetDirectory(QString targetDirectory)
 
 const QString getHash(const QString& filePath)
 {
-    QString sMd5;
+    QString md5;
     QFile file(filePath);
     if(file.open(QIODevice::ReadOnly))
     {
-        QByteArray bArray = QCryptographicHash::hash(file.readAll(),QCryptographicHash::Md5);
-        sMd5 = QString(bArray.toHex()).toUpper();
+        QByteArray bArray = QCryptographicHash::hash(file.readAll(), QCryptographicHash::Md5);
+        md5 = QString(bArray.toHex()).toUpper();
     }
     file.close();
-    return sMd5;
+    return md5;
 }
 
 QList<QString> getFullDirectory(QString target)
 {
     QList<QString> result;
-    QDir *dir=new QDir(target);
+    QDir *dir = new QDir(target);
     QStringList filter;
-    QList<QFileInfo> *fileInfo=new QList<QFileInfo>(dir->entryInfoList(filter));
+    QList<QFileInfo> *fileInfo = new QList<QFileInfo>(dir->entryInfoList(filter));
     for (int i = 0;i < fileInfo->length();++i)
     {
         if (fileInfo->at(i).absoluteFilePath().length() <= target.length())
